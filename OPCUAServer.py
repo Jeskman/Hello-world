@@ -3,10 +3,14 @@
 Created on Fri Oct 30 09:36:52 2020
 
 @author: black
+
+# Kommentar Arne
+
+
 """
 
 from opcua import Server
-
+#nochn Kommentar
 import time
 
 server = Server()
@@ -31,7 +35,7 @@ cycletime.set_writable()
 server.start()
 
 while True:
-    
+
     acycletime = 330/(v1.get_value() + v2.get_value())
     cycletime.set_value(acycletime)
     t1 = v1.get_value()
